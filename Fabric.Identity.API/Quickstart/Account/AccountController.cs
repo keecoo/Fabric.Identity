@@ -15,7 +15,6 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
-using Fabric.Identity.API;
 using Fabric.Identity.API.Configuration;
 using Fabric.Identity.API.Events;
 using Fabric.Identity.API.Management;

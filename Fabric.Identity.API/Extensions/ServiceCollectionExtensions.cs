@@ -115,8 +115,10 @@ namespace Fabric.Identity.API.Extensions
             {
                 options.AddPolicy(FabricIdentityConstants.AuthorizationPolicyNames.RegistrationThreshold,
                     policy => policy.Requirements.Add(new RegisteredClientThresholdRequirement(1)));
+
                 options.AddPolicy(FabricIdentityConstants.AuthorizationPolicyNames.ReadScopeClaim,
                     policy => policy.Requirements.Add(new ReadScopeRequirement()));
+
                 options.AddPolicy(
                     FabricIdentityConstants.AuthorizationPolicyNames.SearchUsersScopeClaim,
                     policy => policy.Requirements.Add(new SearchUserScopeRequirement()));
